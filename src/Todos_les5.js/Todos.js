@@ -46,7 +46,7 @@ export default function Todoss(){
         <>
         <h1>my list📃📃📃</h1>
 
-        <input type="text" name="taskName" placeholder="name of task🤔"/>
+        <input type="text" name="taskName" placeholder="which task🤔"/>
         <input type="number" name="taskId" placeholder="id of task"/>
         <input type="time" name="taskTime"/>
 
@@ -64,7 +64,8 @@ export default function Todoss(){
 
         <div>
           {todos.map((s, index) => (
-              <div key={s.id}>id: {s.id} : {s.Name} with id {s.taskId} -added at {s.Time}</div>
+              <div key={s.id}>the id: {s.id} : the name of task: {s.Name}🐥 
+                 in ocklock {s.Time}🐧</div>
         // <div key={s.id}>{s.name}</div>
          ))}
 
