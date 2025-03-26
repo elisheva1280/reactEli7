@@ -12,47 +12,48 @@ import Show from './Todos_les5.js/Todos';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
 import Todoss from './Todos_les5.js/Todos';
+import { Recycle } from './redux/reducers/RecycleBin';
+import RecycleBin from './les6_recycle/RecycleBin';
+import { HocPrintProps } from './les8/HocPrintProps';
+import Wow from './less1/components/comp2';
 
 
 
 function App() {
+  const WowHocPrintProps = HocPrintProps(Wow);
   return (
     <>
-    <Provider store={store}> 
-      <BrowserRouter>
+      <Provider store={store}>
         {/* { <div className="App">
       <header className="App-header">
         <Welcome></Welcome>
         <TheGalerry></TheGalerry>
-        <PizzaYammy></PizzaYammy>
-        
+        <PizzaYammy></PizzaYammy>       
       </header>
     </div> } */}
-     
-
-        <nav>
-          <Link to="/">Home </Link>
+        {/* <nav> */}
+          {/* <Link to="/">Home </Link>
           <Link to="/Contact"> contact </Link>
           <Link to="/About"> about </Link>
-          <Link to="/Services"> services </Link>
-          
+          <Link to="/Services"> services </Link> */}
           {/* <button  type="button" class="btn btn-secondary btn-sm" onClick={()=>translate('he')} >He</button>
       <button  type="button" class="btn btn-secondary btn-sm" onClick={()=>translate('en')} >En</button> */}
-
-        </nav>
-        
-          {/* <Show>Show&&&&&&&&&&&</Show>  */}
-          <Todoss></Todoss>
-
-        <Routes>
+        {/* </nav> */}
+        {/* <Show>Show&&&&&&&&&&&</Show>  */}
+        {/* <Routes>
           <Route path="/" element={<MyHome></MyHome>}></Route>
           <Route path="/About" element={<About></About>}></Route>
           <Route path="/Contact" element={<Contact></Contact>}></Route>
           <Route path="/Services" element={<Services></Services>}></Route>
-        </Routes>
-      </BrowserRouter>
+        </Routes> */}
+        <Todoss></Todoss>
+        <RecycleBin></RecycleBin>
+
+        <WowHocPrintProps name="ELI7"></WowHocPrintProps>
+
+
       </Provider>
-      </>
+    </>
   );
 }
 

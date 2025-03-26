@@ -1,16 +1,8 @@
-// import { ADDTODO } from "./actionTipes";
-// import { REMOVETODO } from "./actionTipes";
 
-// export const addtodo=(task)=>({
-//     type:ADDTODO,
-//     payload: {task},
-// });
-// export const removetodo=(taskId)=>({
-//     type:REMOVETODO,
-//     payload: {id:taskId},
-// });
 export const ADDTODO = 'ADDTODO';
 export const REMOVETODO = 'REMOVETODO';
+export const RECYCLE='RECYCLE';
+export const REMFOREVER='REMFOREVER';
 
 // Action creator for adding a todo
 export const addToDo = (todo) => ({
@@ -19,7 +11,17 @@ export const addToDo = (todo) => ({
 });
 
 // Action creator for removing a todo
-export const removeToDo = (id) => ({
+export const removeToDo = (todo) => ({
     type: REMOVETODO,
-    payload: id,
+    payload: todo,
 });
+
+export const recycle=(todo)=>({
+    type:RECYCLE,
+    payload:todo,
+});
+
+export const remforever=(todo)=>({
+    type:REMFOREVER,
+    payload:todo,
+})

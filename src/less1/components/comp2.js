@@ -6,7 +6,7 @@ export default function Wow(prop){
     return(
         <div>
         <h1>🫱🏻‍🫲🏿🫱🏼‍🫲🏽🤝,{prop.name}!!!</h1>
-        <img src={myImage} />
+        {/* <img src={myImage} /> */}
         </div>
     );
 }

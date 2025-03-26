@@ -63,21 +63,13 @@ body {
     background-color: #c0392b;
   }
   
-  /* טופס הוספת משימה
+  /* טופס הוספת משימה */
   form {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-  } */
-  form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 40px; /* Increased padding */
-    max-width: 1200px; /* Adjusted maximum width */
-}
+  }
   
   /* שדות קלט */
   input {
